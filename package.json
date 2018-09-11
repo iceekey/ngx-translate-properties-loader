@@ -1,0 +1,32 @@
+{
+  "name": "ngx-translate-properties-loader",
+  "version": "1.0.0",
+  "description": "A http-loader for ngx-translate that supports .properties and .json formats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iceekey/ngx-translate-properties-loader.git"
+  },
+  "keywords": [
+    "translate",
+    "properties",
+    "angular"
+  ],
+  "author": "Meshcheryakov Dmitry <iceekey@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/iceekey/ngx-translate-properties-loader/issues"
+  },
+  "homepage": "https://github.com/iceekey/ngx-translate-properties-loader#readme",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ]
+}
