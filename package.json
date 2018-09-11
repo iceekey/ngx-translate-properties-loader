@@ -1,16 +1,18 @@
 {
-  "name": "ngx-translate-properties-loader",
-  "version": "1.0.0",
+  "name": "ngx-translate-properties-loader2",
+  "version": "0.0.0-development",
   "description": "A http-loader for ngx-translate that supports .properties and .json formats",
   "main": "./dist/ngx-translate-properties-loader.min.js",
   "typings": "./dist/ngx-translate-properties-loader.d.ts",
   "scripts": {
     "start": "cross-env NODE_ENV=production gulp build",
-    "test": "jest"
+    "test": "jest",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iceekey/ngx-translate-properties-loader.git"
+    "url": "https://github.com/iceekey/ngx-translate-properties-loader.git"
   },
   "keywords": [
     "translate",
@@ -35,13 +37,11 @@
     "rollup-plugin-uglify": "^5.0.2",
     "semantic-release": "^15.9.14",
     "ts-jest": "^23.1.4",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.3",
+    "travis-deploy-once": "^5.0.7"
   },
   "files": [
     "./dist/ngx-translate-properties-loader.min.js",
     "./dist/ngx-translate-properties-loader.d.ts"
-  ],
-  "release": {
-    "publish": "@semantic-release/npm"
-  }
+  ]
 }
