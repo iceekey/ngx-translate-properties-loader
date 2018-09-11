@@ -1,11 +1,10 @@
 {
     "compilerOptions": {
-      "module": "commonjs",
+      "module": "es2015",
       "target": "es5",
-      "declaration": true,
-      "outDir": "./dist"
+      "declaration": true
     },
     "files": [
-      "index.ts"
+      "src/ngx-translate-properties-loader.ts"
     ]
   }
