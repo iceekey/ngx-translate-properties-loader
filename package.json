@@ -5,7 +5,8 @@
   "main": "./dist/ngx-translate-properties-loader.min.js",
   "typings": "./dist/ngx-translate-properties-loader.d.ts",
   "scripts": {
-    "start": "cross-env NODE_ENV=production gulp build",
+    "start": "gulp build",
+    "build": "cross-env NODE_ENV=production gulp build",
     "test": "jest",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
@@ -26,6 +27,8 @@
   },
   "homepage": "https://github.com/iceekey/ngx-translate-properties-loader#readme",
   "devDependencies": {
+    "@angular/common": "^6.1.7",
+    "@ngx-translate/core": "^10.0.2",
     "@types/jest": "^23.3.2",
     "cross-env": "^5.2.0",
     "gulp": "^3.9.1",
@@ -33,12 +36,18 @@
     "jest": "^23.6.0",
     "lint-staged": "^7.2.2",
     "rollup": "^0.65.2",
+    "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-typescript2": "^0.17.0",
     "rollup-plugin-uglify": "^5.0.2",
+    "rxjs": "^6.3.2",
     "semantic-release": "^15.9.14",
+    "travis-deploy-once": "^5.0.7",
     "ts-jest": "^23.1.4",
-    "typescript": "^3.0.3",
-    "travis-deploy-once": "^5.0.7"
+    "typescript": "^3.0.3"
+  },
+  "peerDependencies": {
+    "@ngx-translate/core": ">=10.x",
+    "@angular/http": ">=6.x"
   },
   "files": [
     "./dist/ngx-translate-properties-loader.min.js",
