@@ -12,14 +12,12 @@ node_js:
 
 before_script:
   - npm prune
-
-script:
   - npm test
-  - npm run build
+
+script: npm run build
 
 after_success:
-  - test $TRAVIS_BRANCH = "master" &&
-    npm run travis-deploy-once "npm run semantic-release"
+  - test $TRAVIS_BRANCH = "master" && npm run travis-deploy-once "npm run semantic-release"
 
 branches:
   except:
