@@ -2,7 +2,7 @@
   "name": "ngx-translate-properties-loader2",
   "version": "0.0.0-development",
   "description": "A http-loader for ngx-translate that supports .properties and .json formats",
-  "main": "./dist/ngx-translate-properties-loader.min.js",
+  "main": "./dist/ngx-translate-properties-loader.js",
   "typings": "./dist/ngx-translate-properties-loader.d.ts",
   "scripts": {
     "start": "gulp build",
@@ -49,9 +49,5 @@
     "@ngx-translate/core": ">=10.x",
     "@angular/http": ">=6.x",
     "rxjs": ">=6.x"
-  },
-  "files": [
-    "./dist/ngx-translate-properties-loader.min.js",
-    "./dist/ngx-translate-properties-loader.d.ts"
-  ]
+  }
 }
