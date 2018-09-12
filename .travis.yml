@@ -11,10 +11,11 @@ node_js:
   - "8.11.4"
 
 before_script:
-  - npm prune
-  - npm test
+  - npm prun
 
-script: npm run build
+script:
+  - npm run build
+  - npm test
 
 after_success:
   - test $TRAVIS_BRANCH = "master" && npm run travis-deploy-once "npm run semantic-release"
