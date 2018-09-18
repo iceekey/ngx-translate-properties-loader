@@ -7,7 +7,7 @@ Http loader for properties files in @ngx-translate (i18n) library for **Angular 
 Install `@ngx-translate/core` and `ngx-translate-properties-loader` into your project:
 
 ```bash
-  npm i "@ngx-translate/core" ngx-translate-properties-loader
+  npm i "@ngx-translate/core" ngx-translate-properties-loader2
 ```
 
 ## Usage
